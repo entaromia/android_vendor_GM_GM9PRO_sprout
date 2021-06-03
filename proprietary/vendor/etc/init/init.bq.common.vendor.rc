@@ -1,0 +1,371 @@
+import vendor/etc/init/init.bq.device.vendor.rc
+
+on boot
+    # HDMI
+    chown root system /sys/class/switch/hdmi/state
+    chmod 0660 /sys/class/switch/hdmi/state
+
+    # Led
+    chown system system /sys/class/leds/red/blink
+    chown system system /sys/class/leds/blue/blink
+    chown system system /sys/class/leds/green/blink
+    chown system system /sys/class/leds/red/brightness
+    chown system system /sys/class/leds/green/brightness
+    chown system system /sys/class/leds/blue/brightness
+    chown system system /sys/class/leds/red/pause_lo
+    chown system system /sys/class/leds/blue/pause_lo
+    chown system system /sys/class/leds/green/pause_lo
+    chown system system /sys/class/leds/red/pause_hi
+    chown system system /sys/class/leds/blue/pause_hi
+    chown system system /sys/class/leds/green/pause_hi
+    chown system system /sys/class/leds/red/duty_pcts
+    chown system system /sys/class/leds/blue/duty_pcts
+    chown system system /sys/class/leds/green/duty_pcts
+
+    # Back and Front flash
+    chmod 0660 /sys/class/leds/led:flash_0/brightness
+    chmod 0660 /sys/class/leds/led:flash_1/brightness
+    chmod 0660 /sys/class/leds/led:flash_2/brightness
+    chmod 0660 /sys/class/leds/led:torch_0/brightness
+    chmod 0660 /sys/class/leds/led:torch_1/brightness
+    chmod 0660 /sys/class/leds/led:torch_2/brightness
+    chmod 0660 /sys/class/leds/led:switch_0/brightness
+    chmod 0660 /sys/class/leds/led:switch_1/brightness
+    chown system system /sys/class/leds/led:flash_0/brightness
+    chown system system /sys/class/leds/led:flash_1/brightness
+    chown system system /sys/class/leds/led:flash_2/brightness
+    chown system system /sys/class/leds/led:torch_0/brightness
+    chown system system /sys/class/leds/led:torch_1/brightness
+    chown system system /sys/class/leds/led:torch_2/brightness
+    chown system system /sys/class/leds/led:switch_0/brightness
+    chown system system /sys/class/leds/led:switch_1/brightness
+
+    # Vibrator intensity modifier
+    chown system system /sys/class/timed_output/vibrator/enable
+    chown system system /sys/class/timed_output/vibrator/wf_s0
+    chown system system /sys/class/timed_output/vibrator/wf_s1
+    chown system system /sys/class/timed_output/vibrator/wf_s2
+    chown system system /sys/class/timed_output/vibrator/wf_s3
+    chown system system /sys/class/timed_output/vibrator/wf_s4
+    chown system system /sys/class/timed_output/vibrator/wf_s5
+    chown system system /sys/class/timed_output/vibrator/wf_s6
+    chown system system /sys/class/timed_output/vibrator/wf_s7
+    chown system system /sys/class/timed_output/vibrator/wf_update_now
+
+    # runin
+    chown system system /sys/class/power_supply/battery/charging_enabled
+    mkdir /mnt/vendor/persist/audio 0770 audio audio
+
+# Wi-Fi SAR
+service vendor.wifisarnear /vendor/bin/wifisarnear
+    user root
+    group root
+    oneshot
+    disabled
+
+on property:vendor.wifisarnear=1
+    start vendor.wifisarnear
+
+service vendor.wifisarfar /vendor/bin/wifisarfar
+    user root
+    group root
+    oneshot
+    disabled
+
+on property:vendor.wifisarfar=1
+    start vendor.wifisarfar
+
+# audio loopback test
+service loopback_spk1 /vendor/bin/loopback.sh 1 1
+    user root
+    group root
+    disabled
+    oneshot
+
+service loopback_spk0 /vendor/bin/loopback.sh 1 0
+    user root
+    group root
+    disabled
+    oneshot
+
+service loopback_rec1 /vendor/bin/loopback.sh 2 1
+    user root
+    group root
+    disabled
+    oneshot
+
+service loopback_rec0 /vendor/bin/loopback.sh 2 0
+    user root
+    group root
+    disabled
+    oneshot
+
+service tpver /vendor/bin/sh /vendor/bin/init.bq.tp.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+service loopback_hand1 /vendor/bin/loopback.sh 3 1
+    user root
+    group root
+    disabled
+    oneshot
+
+service loopback_hand0 /vendor/bin/loopback.sh 3 0
+    user root
+    group root
+    disabled
+    oneshot
+
+service loopback_sec1 /vendor/bin/loopback.sh 4 1
+    user root
+    group root
+    disabled
+    oneshot
+
+service loopback_sec0 /vendor/bin/loopback.sh 4 0
+    user root
+    group root
+    disabled
+    oneshot
+
+service spk_playback1 /vendor/bin/loopback.sh 5 1
+    user root
+    group root
+    disabled
+    oneshot
+
+service spk_playback0 /vendor/bin/loopback.sh 5 0
+    user root
+    group root
+    disabled
+    oneshot
+
+on property:sys.loopback.spk=1
+    start loopback_spk1
+
+on property:sys.loopback.spk=0
+    start loopback_spk0
+
+on property:sys.loopback.rec=1
+    start loopback_rec1
+
+on property:sys.loopback.rec=0
+    start loopback_rec0
+
+on property:sys.loopback.mic1=1
+    start loopback_hand1
+
+on property:sys.loopback.mic1=0
+    start loopback_hand0
+
+on property:sys.loopback.mic2=1
+    start loopback_sec1
+
+on property:sys.loopback.mic2=0
+    start loopback_sec0
+
+on property:persist.sys.loopback-spk=1
+    start loopback_spk1
+
+on property:persist.sys.loopback-spk=0
+    start loopback_spk0
+
+on property:persist.sys.loopback-rec=1
+    start loopback_rec1
+
+on property:persist.sys.loopback-rec=0
+    start loopback_rec0
+
+on property:persist.sys.loopback-mic1=1
+    start loopback_hand1
+
+on property:persist.sys.loopback-mic1=0
+    start loopback_hand0
+
+on property:persist.sys.loopback-mic2=1
+    start loopback_sec1
+
+on property:persist.sys.loopback-mic2=0
+    start loopback_sec0
+
+on property:persist.sys.spk-playback=1
+    start spk_playback1
+
+on property:persist.sys.spk-playback=0
+    start spk_playback0
+
+service tinyhostless /vendor/bin/tinyhostless -D 0 -P 5 -C 11 -p 8 -n 2 -c 1 -r 48000
+    user root
+    group root
+    disabled
+    oneshot
+
+service tinyhostless_spk /vendor/bin/tinyhostless -D 0 -P 35 -C 11 -p 8 -n 2 -c 1 -r 48000
+    user root
+    group root
+    disabled
+    oneshot
+
+on property:sys.tinyhostless=0
+    stop tinyhostless
+
+on property:sys.tinyhostless=1
+    start tinyhostless
+
+on property:sys.tinyhostless-spk=0
+    stop tinyhostless_spk
+
+on property:sys.tinyhostless-spk=1
+    start tinyhostless_spk
+
+on property:sys.shutdown.requested=*
+   setprop vendor.peripheral.shutdown_critical_list ""
+
+service diag_mdlog /vendor/bin/diag_mdlog
+    class late_start
+    user shell
+    group system diag oem_2901 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service stop_diag_mdlog /vendor/bin/diag_mdlog -k
+    class late_start
+    user shell
+    group system diag oem_2901 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+on property:persist.vendor.qxdm.enable=1
+    start diag_mdlog
+
+on property:persist.vendor.qxdm.enable=0
+    start stop_diag_mdlog
+
+on property:sys.monkey.state=1
+    mkdir /acct/uid_0/random_test
+    write /acct/uid_0/random_test/cgroup.procs ${sys.monkey.pid}
+
+on property:sys.monkey.state=0
+    rmdir /acct/uid_0/random_test
+
+on property:persist.wlan.cnss_diag=1
+    start cnss_diag
+
+on property:persist.wlan.cnss_diag=0
+    stop cnss_diag
+
+on post-fs-data
+    # Create the directories used by LctDiagSendData
+    mkdir /data/lct_diag 0771 system system
+    chown system system /data/lct_diag
+    mkdir /data/fpc 0700 system system
+
+# vold restart
+on property:vold.decrypt=trigger_restart_framework
+    start qcom-c_main-sh
+
+service ftmd_svc /vendor/bin/ftmdaemon
+    class late_start
+    user root
+    group bluetooth net_bt_admin diag
+    disabled
+    oneshot
+
+# RF BT test
+service blueduttest /vendor/bin/sh /vendor/bin/bluedut.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+# RF wifi test
+service openwifi_L /vendor/bin/sh /vendor/bin/wifitest.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+on property:persist.sys.openwifi_L=1
+        start openwifi_L
+
+# RF wifi test
+service closewifi_L /vendor/bin/sh /vendor/bin/wifitest_close.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+on property:persist.sys.closewifi_L=1
+        start closewifi_L
+
+# RF wifi test
+service iwprivftm /vendor/bin/sh /vendor/bin/iwpriv.agent.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+on property:persist.sys.iwpriv=1
+    start iwprivftm
+
+#for wifi myftm test
+service myftmftm /vendor/bin/sh /vendor/bin/myftm.agent.sh
+    class late_start
+    user root
+    oneshot
+    disabled
+
+on property:persist.sys.myftm=1
+    start myftmftm
+
+service btopen /vendor/bin/sh /vendor/bin/bt_open.sh
+    user root
+    group root
+    oneshot
+    disabled
+
+on property:persist.sys.openbt=1
+    start btopen
+
+service btclose /vendor/bin/sh /vendor/bin/bt_close.sh
+    user root
+    group root
+    oneshot
+    disabled
+
+on property:persist.sys.closebt=1
+    start btclose
+
+service wdsdaemon /vendor/bin/wdsdaemon -su
+    user root
+    group root
+    oneshot
+    disabled
+
+on property:persist.sys.start_wdsdaemon=1
+    start wdsdaemon
+
+on property:persist.sys.start_wdsdaemon=0
+    stop wdsdaemon
+
+# Command for PA test
+service LctDiagSendData /vendor/bin/LctDiagSendData
+    class core
+    user root
+    oneshot
+    disabled
+
+on property:ro.runtime.firstboot=*
+    start LctDiagSendData
+
+on property:sys.boot_completed=1
+    setprop persist.vendor.dpm.nsrm 1
+    setprop persist.vendor.dpm.feature 3
+    start tpver
+
+on charger
+    chown system system /sys/class/leds/red/brightness
+    chown system system /sys/class/leds/green/brightness
+    chown system system /sys/class/leds/blue/brightness

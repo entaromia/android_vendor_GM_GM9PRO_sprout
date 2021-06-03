@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeviceResolutions>
+	<Camera id="2">
+		<SizesArray type="preview">
+			<Resolution width="2160" height="1080" />
+			<Resolution width="2048" height="1536" />
+			<Resolution width="2048" height="1080" />
+			<Resolution width="1920" height="1080" />
+			<Resolution width="1440" height="1080" />
+			<Resolution width="1280" height="960" />
+			<Resolution width="1280" height="720" />
+			<Resolution width="800" height="480" />
+			<Resolution width="720" height="480" />
+			<Resolution width="640" height="640" />
+			<Resolution width="640" height="480" />
+			<Resolution width="480" height="640" />
+			<Resolution width="640" height="360" />
+			<Resolution width="480" height="360" />
+			<Resolution width="320" height="240" />
+			<Resolution width="240" height="320" />
+		</SizesArray>
+		<SizesArray type="picture">
+			<Resolution width="3264" height="2448" stall="72" />
+			<Resolution width="3248" height="1824" stall="72" />
+			<Resolution width="3248" height="1624" stall="72" />
+			<Resolution width="2560" height="1920" stall="57" />
+			<Resolution width="2688" height="1512" stall="53" />
+			<Resolution width="2160" height="1080" stall="52" />
+			<Resolution width="1920" height="1080" stall="49" />
+			<Resolution width="1600" height="1200" stall="48" />
+			<Resolution width="1440" height="1080" stall="47" />
+			<Resolution width="1280" height="960" stall="46" />
+			<Resolution width="1280" height="720" stall="45" />
+			<Resolution width="1280" height="640" stall="45" />
+			<Resolution width="1024" height="768" stall="45" />
+			<Resolution width="800" height="600" stall="45" />
+			<Resolution width="720" height="480" stall="44" />
+			<Resolution width="640" height="480" stall="44" />
+			<Resolution width="640" height="360" stall="44" />
+			<Resolution width="480" height="640" stall="43" />
+			<Resolution width="480" height="360" stall="43" />
+			<Resolution width="480" height="320" stall="42" />
+			<Resolution width="352" height="288" stall="40" />
+			<Resolution width="320" height="240" stall="40" />
+			<Resolution width="240" height="320" stall="35" />
+			<Resolution width="176" height="144" stall="30" />
+			<Resolution width="160" height="120" stall="25" />
+			<Resolution width="144" height="176" stall="18" />
+		</SizesArray>
+		<SizesArray type="liveshot">
+			<Resolution width="5312" height="2988" />
+			<Resolution width="4128" height="3096" />
+			<Resolution width="4128" height="2322" />
+			<Resolution width="4000" height="3000" />
+			<!--This resolution is required for 4K recording
+			      as we match video/liveshot aspect ratios -->
+			<Resolution width="4096" height="2160" />
+			<Resolution width="3840" height="2160" />
+			<Resolution width="3264" height="2448" />
+			<Resolution width="3200" height="2400" />
+			<Resolution width="2560" height="1920" />
+			<Resolution width="2048" height="1536" />
+			<Resolution width="2048" height="1080" />
+			<Resolution width="1920" height="1080" />
+			<Resolution width="2560" height="800" />
+			<Resolution width="1600" height="1200" />
+			<Resolution width="1440" height="1080" />
+			<Resolution width="1280" height="960" />
+			<Resolution width="1280" height="768" />
+			<Resolution width="1280" height="720" />
+			<Resolution width="1280" height="480" />
+			<Resolution width="1280" height="400" />
+			<Resolution width="1024" height="768" />
+			<Resolution width="800" height="600" />
+			<Resolution width="864" height="480" />
+			<Resolution width="800" height="480" />
+			<Resolution width="720" height="480" />
+			<Resolution width="640" height="480" />
+			<Resolution width="640" height="360" />
+			<Resolution width="352" height="288" />
+			<Resolution width="320" height="240" />
+			<Resolution width="176" height="144" />
+			<Resolution width="160" height="120" />
+		</SizesArray>
+		<SizesArray type="video">
+			<Resolution width="4096" height="2160" />
+			<Resolution width="3840" height="2160" />
+			<Resolution width="1920" height="1080" />
+			<Resolution width="2560" height="800" />
+			<Resolution width="1280" height="960" />
+			<Resolution width="1280" height="720" />
+			<Resolution width="1280" height="480" />
+			<Resolution width="1280" height="400" />
+			<Resolution width="864" height="480" />
+			<Resolution width="800" height="480" />
+			<Resolution width="720" height="480" />
+			<Resolution width="640" height="480" />
+			<Resolution width="480" height="640" />
+			<Resolution width="640" height="360" />
+			<Resolution width="480" height="360" />
+			<Resolution width="480" height="320" />
+			<Resolution width="352" height="288" />
+			<Resolution width="320" height="240" />
+			<Resolution width="240" height="320" />
+			<Resolution width="176" height="144" />
+			<Resolution width="144" height="176" />
+			<Resolution width="160" height="120" />
+		</SizesArray>
+		<SizesArray type="hfr">
+			<Resolution width="3840" height="2160" />
+			<Resolution width="1920" height="1080" />
+			<Resolution width="2560" height="800" />
+			<Resolution width="1280" height="720" />
+			<Resolution width="720" height="480" />
+			<Resolution width="640" height="480" />
+			<Resolution width="480" height="360" />
+			<Resolution width="320" height="240" />
+		</SizesArray>
+	</Camera>
+	<Camera id="1">
+		<SizesArray type="preview">
+			<Resolution width="2160" height="1080" />
+			<Resolution width="2048" height="1536" />
+			<Resolution width="2048" height="1080" />
+			<Resolution width="1920" height="1080" />
+			<Resolution width="1440" height="1080" />
+			<Resolution width="1280" height="960" />
+			<Resolution width="1280" height="720" />
+			<Resolution width="800" height="480" />
+			<Resolution width="720" height="480" />
+			<Resolution width="640" height="640" />
+			<Resolution width="640" height="480" />
+			<Resolution width="480" height="640" />
+			<Resolution width="640" height="360" />
+			<Resolution width="480" height="360" />
+			<Resolution width="320" height="240" />
+			<Resolution width="240" height="320" />
+		</SizesArray>
+		<SizesArray type="picture">
+			<Resolution width="3264" height="2448" stall="72" />
+			<Resolution width="3248" height="1824" stall="72" />
+			<Resolution width="3248" height="1624" stall="72" />
+			<Resolution width="2592" height="1944" stall="57" />
+			<Resolution width="2688" height="1512" stall="53" />
+			<Resolution width="2160" height="1080" stall="52" />
+			<Resolution width="1920" height="1080" stall="49" />
+			<Resolution width="1600" height="1200" stall="48" />
+			<Resolution width="1440" height="1080" stall="47" />
+			<Resolution width="1280" height="960" stall="46" />
+			<Resolution width="1280" height="720" stall="45" />
+			<Resolution width="1280" height="640" stall="45" />
+			<Resolution width="1024" height="768" stall="45" />
+			<Resolution width="800" height="600" stall="45" />
+			<Resolution width="720" height="480" stall="44" />
+			<Resolution width="640" height="480" stall="44" />
+			<Resolution width="640" height="360" stall="44" />
+			<Resolution width="480" height="640" stall="43" />
+			<Resolution width="480" height="360" stall="43" />
+			<Resolution width="480" height="320" stall="42" />
+			<Resolution width="352" height="288" stall="40" />
+			<Resolution width="320" height="240" stall="40" />
+			<Resolution width="240" height="320" stall="35" />
+			<Resolution width="176" height="144" stall="30" />
+			<Resolution width="160" height="120" stall="25" />
+			<Resolution width="144" height="176" stall="18" />
+		</SizesArray>
+		<SizesArray type="liveshot">
+			<Resolution width="5312" height="2988" />
+			<Resolution width="4128" height="3096" />
+			<Resolution width="4128" height="2322" />
+			<Resolution width="4000" height="3000" />
+			<!--This resolution is required for 4K recording
+			      as we match video/liveshot aspect ratios -->
+			<Resolution width="4096" height="2160" />
+			<Resolution width="3840" height="2160" />
+			<Resolution width="3264" height="2448" />
+			<Resolution width="3200" height="2400" />
+			<Resolution width="2592" height="1944" />
+			<Resolution width="2048" height="1536" />
+			<Resolution width="2048" height="1080" />
+			<Resolution width="1920" height="1080" />
+			<Resolution width="2560" height="800" />
+			<Resolution width="1600" height="1200" />
+			<Resolution width="1440" height="1080" />
+			<Resolution width="1280" height="960" />
+			<Resolution width="1280" height="768" />
+			<Resolution width="1280" height="720" />
+			<Resolution width="1280" height="480" />
+			<Resolution width="1280" height="400" />
+			<Resolution width="1024" height="768" />
+			<Resolution width="800" height="600" />
+			<Resolution width="864" height="480" />
+			<Resolution width="800" height="480" />
+			<Resolution width="720" height="480" />
+			<Resolution width="640" height="480" />
+			<Resolution width="640" height="360" />
+			<Resolution width="352" height="288" />
+			<Resolution width="320" height="240" />
+			<Resolution width="176" height="144" />
+			<Resolution width="160" height="120" />
+		</SizesArray>
+		<SizesArray type="video">
+			<Resolution width="4096" height="2160" />
+			<Resolution width="3840" height="2160" />
+			<Resolution width="1920" height="1080" />
+			<Resolution width="2560" height="800" />
+			<Resolution width="1280" height="960" />
+			<Resolution width="1280" height="720" />
+			<Resolution width="1280" height="480" />
+			<Resolution width="1280" height="400" />
+			<Resolution width="864" height="480" />
+			<Resolution width="800" height="480" />
+			<Resolution width="720" height="480" />
+			<Resolution width="640" height="480" />
+			<Resolution width="480" height="640" />
+			<Resolution width="640" height="360" />
+			<Resolution width="480" height="360" />
+			<Resolution width="480" height="320" />
+			<Resolution width="352" height="288" />
+			<Resolution width="320" height="240" />
+			<Resolution width="240" height="320" />
+			<Resolution width="176" height="144" />
+			<Resolution width="144" height="176" />
+			<Resolution width="160" height="120" />
+		</SizesArray>
+		<SizesArray type="hfr">
+			<Resolution width="3840" height="2160" />
+			<Resolution width="1920" height="1080" />
+			<Resolution width="2560" height="800" />
+			<Resolution width="1280" height="720" />
+			<Resolution width="720" height="480" />
+			<Resolution width="640" height="480" />
+			<Resolution width="480" height="360" />
+			<Resolution width="320" height="240" />
+		</SizesArray>
+	</Camera>
+	<Camera id="0">
+		<SizesArray type="preview">
+			<Resolution width="2160" height="1080" />
+			<Resolution width="2048" height="1536" />
+			<Resolution width="2048" height="1080" />
+			<Resolution width="1920" height="1080" />
+			<Resolution width="1440" height="1080" />
+			<Resolution width="1280" height="960" />
+			<Resolution width="1280" height="720" />
+			<Resolution width="800" height="480" />
+			<Resolution width="720" height="480" />
+			<Resolution width="640" height="640" />
+			<Resolution width="640" height="480" />
+			<Resolution width="480" height="640" />
+			<Resolution width="640" height="360" />
+			<Resolution width="480" height="360" />
+			<Resolution width="320" height="240" />
+			<Resolution width="240" height="320" />
+		</SizesArray>
+		<SizesArray type="picture">
+			<Resolution width="4032" height="3024" stall="80" />
+			<Resolution width="3840" height="2160" stall="76" />
+			<Resolution width="3840" height="1920" stall="70" />
+			<Resolution width="3264" height="2448" stall="72" />
+			<Resolution width="3200" height="2400" stall="70" />
+			<Resolution width="2880" height="1440" stall="60" />
+			<Resolution width="2592" height="1944" stall="57" />
+			<Resolution width="2688" height="1512" stall="53" />
+			<Resolution width="2160" height="1080" stall="50" />
+			<Resolution width="2048" height="1536" stall="50" />
+			<Resolution width="1920" height="1080" stall="49" />
+			<Resolution width="1600" height="1200" stall="48" />
+			<Resolution width="1440" height="1080" stall="47" />
+			<Resolution width="1280" height="960" stall="46" />
+			<Resolution width="1280" height="720" stall="45" />
+			<Resolution width="1280" height="640" stall="45" />
+			<Resolution width="1024" height="768" stall="45" />
+			<Resolution width="800" height="600" stall="45" />
+			<Resolution width="720" height="480" stall="44" />
+			<Resolution width="640" height="480" stall="44" />
+			<Resolution width="640" height="360" stall="44" />
+			<Resolution width="480" height="640" stall="43" />
+			<Resolution width="480" height="360" stall="43" />
+			<Resolution width="480" height="320" stall="42" />
+			<Resolution width="352" height="288" stall="40" />
+			<Resolution width="320" height="240" stall="40" />
+			<Resolution width="240" height="320" stall="35" />
+			<Resolution width="176" height="144" stall="30" />
+			<Resolution width="160" height="120" stall="25" />
+			<Resolution width="144" height="176" stall="18" />
+		</SizesArray>
+		<SizesArray type="liveshot">
+			<Resolution width="5312" height="2988" />
+			<Resolution width="4128" height="3096" />
+			<Resolution width="4128" height="2322" />
+			<Resolution width="4000" height="3000" />
+			<!--This resolution is required for 4K recording
+						as we match video/liveshot aspect ratios -->
+			<Resolution width="4096" height="2160" />
+			<Resolution width="3840" height="2160" />
+			<Resolution width="3264" height="2448" />
+			<Resolution width="3200" height="2400" />
+			<Resolution width="2592" height="1944" />
+			<Resolution width="2048" height="1536" />
+			<Resolution width="2048" height="1080" />
+			<Resolution width="1920" height="1080" />
+			<Resolution width="2560" height="800" />
+			<Resolution width="1600" height="1200" />
+			<Resolution width="1440" height="1080" />
+			<Resolution width="1280" height="960" />
+			<Resolution width="1280" height="768" />
+			<Resolution width="1280" height="720" />
+			<Resolution width="1280" height="480" />
+			<Resolution width="1280" height="400" />
+			<Resolution width="1024" height="768" />
+			<Resolution width="800" height="600" />
+			<Resolution width="864" height="480" />
+			<Resolution width="800" height="480" />
+			<Resolution width="720" height="480" />
+			<Resolution width="640" height="480" />
+			<Resolution width="640" height="360" />
+			<Resolution width="352" height="288" />
+			<Resolution width="320" height="240" />
+			<Resolution width="176" height="144" />
+			<Resolution width="160" height="120" />
+		</SizesArray>
+		<SizesArray type="video">
+			<Resolution width="4096" height="2160" />
+			<Resolution width="3840" height="2160" />
+			<Resolution width="1920" height="1080" />
+			<Resolution width="2560" height="800" />
+			<Resolution width="1280" height="960" />
+			<Resolution width="1280" height="720" />
+			<Resolution width="1280" height="480" />
+			<Resolution width="1280" height="400" />
+			<Resolution width="864" height="480" />
+			<Resolution width="800" height="480" />
+			<Resolution width="720" height="480" />
+			<Resolution width="640" height="480" />
+			<Resolution width="480" height="640" />
+			<Resolution width="640" height="360" />
+			<Resolution width="480" height="360" />
+			<Resolution width="480" height="320" />
+			<Resolution width="352" height="288" />
+			<Resolution width="320" height="240" />
+			<Resolution width="240" height="320" />
+			<Resolution width="176" height="144" />
+			<Resolution width="144" height="176" />
+			<Resolution width="160" height="120" />
+		</SizesArray>
+		<SizesArray type="hfr">
+			<Resolution width="3840" height="2160" />
+			<Resolution width="1920" height="1080" />
+			<Resolution width="2560" height="800" />
+			<Resolution width="1280" height="720" />
+			<Resolution width="720" height="480" />
+			<Resolution width="640" height="480" />
+			<Resolution width="480" height="360" />
+			<Resolution width="320" height="240" />
+		</SizesArray>
+	</Camera>
+</DeviceResolutions>
