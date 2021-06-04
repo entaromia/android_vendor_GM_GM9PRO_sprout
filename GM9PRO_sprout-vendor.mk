@@ -94,6 +94,7 @@ PRODUCT_COPY_FILES += \
     vendor/GM/GM9PRO_sprout/proprietary/product/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephonyservice.xml \
     vendor/GM/GM9PRO_sprout/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
     vendor/GM/GM9PRO_sprout/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
+    vendor/GM/GM9PRO_sprout/proprietary/product/framework/vendor.qti.hardware.bluetooth_dun-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.bluetooth_dun-V1.0-java.jar \
     vendor/GM/GM9PRO_sprout/proprietary/product/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/GM/GM9PRO_sprout/proprietary/product/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/GM/GM9PRO_sprout/proprietary/product/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
@@ -1862,7 +1863,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.data.factory-V2.1-java \
     vendor.qti.data.slm-V1.0-java \
     vendor.qti.hardware.alarm-V1.0-java \
-    vendor.qti.hardware.bluetooth_dun-V1.0-java \
     vendor.qti.hardware.data.connection-V1.0-java \
     vendor.qti.hardware.data.connection-V1.1-java \
     vendor.qti.hardware.data.dynamicdds-V1.0-java \
