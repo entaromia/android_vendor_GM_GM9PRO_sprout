@@ -279,7 +279,6 @@ PRODUCT_COPY_FILES += \
     vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/cnss_diag:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_diag \
-    vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/diag_socket_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_socket_log \
     vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/e_loop:$(TARGET_COPY_OUT_VENDOR)/bin/e_loop \
     vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/energy-awareness:$(TARGET_COPY_OUT_VENDOR)/bin/energy-awareness \
@@ -322,9 +321,7 @@ PRODUCT_COPY_FILES += \
     vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
     vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/mm-pp-dpps:$(TARGET_COPY_OUT_VENDOR)/bin/mm-pp-dpps \
     vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/mm-qcamera-app:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-app \
-    vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/mmid:$(TARGET_COPY_OUT_VENDOR)/bin/mmid \
     vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
-    vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/myftm:$(TARGET_COPY_OUT_VENDOR)/bin/myftm \
     vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
     vendor/GM/GM9PRO_sprout/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
