@@ -184,18 +184,6 @@ dex_import {
 }
 
 dex_import {
-	name: "com.qti.location.sdk",
-	owner: "GM",
-	jars: ["proprietary/framework/com.qti.location.sdk.jar"],
-}
-
-dex_import {
-	name: "izat.xt.srv",
-	owner: "GM",
-	jars: ["proprietary/framework/izat.xt.srv.jar"],
-}
-
-dex_import {
 	name: "tcmclient",
 	owner: "GM",
 	jars: ["proprietary/framework/tcmclient.jar"],
