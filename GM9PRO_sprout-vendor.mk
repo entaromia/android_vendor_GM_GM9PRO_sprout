@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/GM/GM9PRO_sprout
 
 PRODUCT_COPY_FILES += \
-    vendor/GM/GM9PRO_sprout/proprietary/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
     vendor/GM/GM9PRO_sprout/proprietary/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib/fm_helium.so \
     vendor/GM/GM9PRO_sprout/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
     vendor/GM/GM9PRO_sprout/proprietary/lib/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxMux.so \
@@ -1198,7 +1197,6 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
-    audiosphere \
     tcmclient \
     com.fingerprints.extension \
     vendor.qti.hardware.alarm-V1.0-java \

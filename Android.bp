@@ -147,12 +147,6 @@ android_app_import {
 }
 
 dex_import {
-	name: "audiosphere",
-	owner: "GM",
-	jars: ["proprietary/framework/audiosphere.jar"],
-}
-
-dex_import {
 	name: "tcmclient",
 	owner: "GM",
 	jars: ["proprietary/framework/tcmclient.jar"],
