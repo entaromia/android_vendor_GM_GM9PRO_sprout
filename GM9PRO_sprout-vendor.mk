@@ -1152,7 +1152,6 @@ PRODUCT_PACKAGES += \
     TimeService \
     QtiTelephonyService \
     atfwd \
-    datastatusnotification \
     uceShimService \
     dpmserviceapp \
     ims \
